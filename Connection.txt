@@ -1,0 +1,42 @@
+📘 Components Used
+Microcontroller Board:
+
+Model: Arduino-compatible board (e.g., ESP32 or Arduino Uno)
+
+Purpose: Central controller for data acquisition, processing, and alert management.
+
+MQ-2 Gas Sensor:
+
+Function: Detects flammable gases such as LPG, methane, and smoke.
+
+Interface: Analog output (AOUT).
+
+MQ-135 Gas Sensor:
+
+Function: Detects toxic gases such as carbon dioxide (CO₂), ammonia (NH₃), and benzene.
+
+Interface: Analog output (AOUT).
+
+Breadboard and Jumper Wires:
+
+Purpose: For prototyping and establishing connections between components.
+
+USB Cable:
+
+Function: Used for programming the microcontroller and providing power.
+
+📡 Sensor Connections to Microcontroller
+MQ-2 Gas Sensor
+VCC → Connected to 3.3V (or 5V, depending on sensor specification) pin of the microcontroller.
+
+GND → Connected to GND (ground) of the microcontroller.
+
+AOUT → Connected to Analog Pin GPIO 34 (defined as MQ2_PIN in the code).
+
+MQ-135 Gas Sensor
+VCC → Connected to 3.3V (or 5V) pin of the microcontroller.
+
+GND → Connected to GND of the microcontroller.
+
+AOUT → Connected to Analog Pin GPIO 35 (defined as MQ135_PIN in the code).
+
